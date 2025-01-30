@@ -14,10 +14,10 @@ class Amulette {
 }
 
 void main() {
-  Amulette AmuletteFeu = Amulette("Flamme Eternelle", 50, "Obsidienne");
-  Amulette AmuletteGlace = Amulette("Coeur Gelé", 40, "Cristal de Glace");
-  Amulette AmuletteOmbre = Amulette("Voile Noctune", 60, "Onyx");
-  AmuletteFeu.element();
-  AmuletteGlace.element();
-  AmuletteOmbre.element();
+  Amulette amuletteFeu = Amulette("Flamme Eternelle", 50, "Obsidienne");
+  Amulette amuletteGlace = Amulette("Coeur Gelé", 40, "Cristal de Glace");
+  Amulette amuletteOmbre = Amulette("Voile Noctune", 60, "Onyx");
+  amuletteFeu.element();
+  amuletteGlace.element();
+  amuletteOmbre.element();
 }
