@@ -1,0 +1,23 @@
+class Amulette {
+//Propriétés
+  String nom;
+  int puissance;
+  String mateau;
+// methodes
+  void element() {
+    print(
+        "Je m'appelle ${this.nom}, j'ai une puissance égale à: ${this.puissance} et mon matériel s'appel ${this.mateau}.");
+  }
+
+//constructeur
+  Amulette(this.nom, this.puissance, this.mateau);
+}
+
+void main() {
+  Amulette AmuletteFeu = Amulette("Flamme Eternelle", 50, "Obsidienne");
+  Amulette AmuletteGlace = Amulette("Coeur Gelé", 40, "Cristal de Glace");
+  Amulette AmuletteOmbre = Amulette("Voile Noctune", 60, "Onyx");
+  AmuletteFeu.element();
+  AmuletteGlace.element();
+  AmuletteOmbre.element();
+}
