@@ -1,8 +1,33 @@
-import 'exo_02.dart';
+import 'exo_01.dart';
 
 class Boutique {
-  List<String> inventaire = ["Flamme Eternelle", "Voile Nocturne"];
+  List<Amulette> inventaire = [];
+
+  ajouterAmulette(Amulette amulette) {
+    inventaire.add(amulette);
+  }
+
+  afficherAmulette() {
+    inventaire.remove(Amulette);
+  }
+
+  vendreAmulette() {
+    inventaire.remove(Amulette);
+  }
 }
 
-//methodes
-void ajouterAmulette(amulette) {}
+void afficherAmulette() {
+  if (inventaire)
+    for (var element in inventaire) {
+      element.Afficher();
+    }
+}
+
+void main() {
+  Boutique sort = Boutique();
+  sort.ajouterAmulette(amuletteFeu);
+  sort.ajouterAmulette(amuletteGlace);
+  sort.ajouterAmulette(amuletteOmbre);
+  sort.afficherAmulette();
+  sort.vendreAmulette();
+}
